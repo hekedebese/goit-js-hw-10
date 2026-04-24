@@ -43,6 +43,9 @@ const options = {
       iziToast.error({
         message: 'Please choose a date in the future',
       });
+      start.disabled = true;
+      userSelectedDate = null;
+      return;
     } else {
       userSelectedDate = selectedDate;
       start.disabled = false;
